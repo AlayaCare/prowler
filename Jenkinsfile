@@ -14,7 +14,7 @@ node('build') {
         }
 
         stage('Build Docker Image') {
-            dockerImage = docker.build(buildTag, "./util/Dockerfile")
+            dockerImage = docker.build(buildTag, "./util/")
         }
 
         stage('Push Image') {
